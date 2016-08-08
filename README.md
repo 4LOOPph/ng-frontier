@@ -24,7 +24,7 @@ Proudly brought to you by 4LOOP Developers
 You can install the module from a package manger of your choice directly from the command line
 
 ```sh
-# Bower (Coming soon)
+# Bower
 bower install ng-frontier
 
 # NPM (Coming soon)
