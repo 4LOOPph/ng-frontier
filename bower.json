@@ -1,0 +1,18 @@
+{
+    "name": "ng-frontier",
+    "version": "1.0.0",
+    "authors": [
+        "4LOOP <info@4loop.ph>"
+    ],
+    "description": "AngularJS Frontier Wrapper",
+    "main": "dist/ng-frontier.min.js",
+    "license": "MIT",
+    "homepage": "http://fourloopph.bitbucket.org/developers/#/frontier",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/4LOOPph/ng-frontier.git"
+    },
+    "dependencies": {
+        "angular": "*"
+    }
+}
