@@ -34,19 +34,20 @@ npm i ng-frontier
 nuget install ng-frontier
 ```
 
-Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
-
-
-In your application, declare the ngFrontier module dependency.
+Inject the Native Frontier JS
 ````html
 <script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/js/frontier.min.js"></script>
+OR
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/master/dist/frontier.min.js"></script>
 ````
-Then Add
+
+Then Add Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
+
+In your application, declare the ngFrontier module dependency.
 
 ```html
 <script src="bower_components/ng-frontier/dist/ng-frontier.js"></script>
 ```
-
 OR Via CDN
 
 ````html
