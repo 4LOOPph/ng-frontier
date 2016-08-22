@@ -38,14 +38,21 @@ Or alternatively, grab the dist/ng-frontier.min.js and include it in your projec
 
 
 In your application, declare the ngFrontier module dependency.
+````html
+<script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/js/frontier.min.js"></script>
+````
+Then Add
 
 ```html
 <script src="bower_components/ng-frontier/dist/ng-frontier.js"></script>
 ```
-Or
+
+OR Via CDN
+
 ````html
-<script type="text/javascript" src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/angular/ng-frontier.min.js"></script>
-<script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/js/frontier.min.js"></script>
+<script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/angular/ng-frontier.min.js"></script>
+OR
+<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/master/dist/ng-frontier.min.js"></script>
 ````
 
 Don't forget to add frontier.min.js as this is the main SDK for Frontier Analytics
