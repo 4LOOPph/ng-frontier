@@ -178,6 +178,10 @@ Using Angular-ngRoute
   // Create a new pageview event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
+			/*
+			PARAMETERS
+			@userId - string
+			*/
        $frontierAnalytics.setUserId('XXXXX');
   });
 ```
@@ -187,6 +191,12 @@ Using Angular-ngRoute
   // Create a new pageview event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
+			/*
+				PARAMETERS
+				@title - string
+				@location - string
+				@page - string
+			*/
        $frontierAnalytics.trackPage('/video/detail/XXX');
 
        // Create a new pageview event with page title
@@ -203,6 +213,13 @@ Using Angular-ngRoute
 ```js
     app.controller('SampleController', function ($frontierAnalytics) {
           // Create a new tracking event
+					/*
+						PARAMETERS
+						@category - string
+						@action - string
+						@label - string
+						@value - string
+					*/
           $frontierAnalytics.trackEvent('video', 'play', 'django.mp4');
 
           // Create a new tracking event with a value
@@ -233,6 +250,10 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   // Create a new screen tracking event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
+			/*
+			PARAMETERS
+				@screenName - string
+			*/
        $frontierAnalytics.trackView('/video/detail/XXX');
   });
 ```
@@ -242,6 +263,13 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   // Create a new app tracking event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
+			/*
+			PARAMETERS
+				@appName - string
+				@appID - string
+				@appVersion - string
+				@appInstallerID -  stirng
+			*/
        $frontierAnalytics.trackApp('AppName','89d47d74-ad26-4c03-9b38-f447d46486db','1.0.0','0.0.1');
   });
 ```
@@ -252,6 +280,7 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
 		/*
+		PARAMETERS
 			@deviceID - string
 			@deviceName - string
 			@deviceBrand - string
