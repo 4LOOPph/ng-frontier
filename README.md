@@ -251,6 +251,16 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   // Create a new device tracking event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
+		/*
+			@deviceID - string
+			@deviceName - string
+			@deviceBrand - string
+			@deviceModel - string
+			@osName - string
+			@osVersion - string
+			@screenResolution - string
+			@serviceProvider - string
+		*/
        $frontierAnalytics.trackDevice('89d47d74-ad26-4c03-9b38-f447d46486db','Vcuie-PC','Asus','0.0.1','Win 10','WinRT 10','1900x760','SMART');
   });
 ```
