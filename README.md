@@ -213,13 +213,13 @@ Using Angular-ngRoute
 ```js
     app.controller('SampleController', function ($frontierAnalytics) {
           // Create a new tracking event
-					/*
-						PARAMETERS
-						@category - string
-						@action - string
-						@label - string
-						@value - string
-					*/
+			/*
+				PARAMETERS
+				@category - string
+				@action - string
+				@label - string
+				@value - string
+			*/
           $frontierAnalytics.trackEvent('video', 'play', 'django.mp4');
 
           // Create a new tracking event with a value
