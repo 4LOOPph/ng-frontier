@@ -178,10 +178,10 @@ Using Angular-ngRoute
   // Create a new pageview event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
-			/*
-			PARAMETERS
-			@userId - string
-			*/
+		/*
+		PARAMETERS
+		@userId - string
+		*/
        $frontierAnalytics.setUserId('XXXXX');
   });
 ```
@@ -191,12 +191,12 @@ Using Angular-ngRoute
   // Create a new pageview event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
-			/*
-				PARAMETERS
-				@title - string
-				@location - string
-				@page - string
-			*/
+		/*
+			PARAMETERS
+			@title - string
+			@location - string
+			@page - string
+		*/
        $frontierAnalytics.trackPage('/video/detail/XXX');
 
        // Create a new pageview event with page title
@@ -263,13 +263,13 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   // Create a new app tracking event
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
-			/*
-			PARAMETERS
-				@appName - string
-				@appID - string
-				@appVersion - string
-				@appInstallerID -  stirng
-			*/
+	/*
+	PARAMETERS
+		@appName - string
+		@appID - string
+		@appVersion - string
+		@appInstallerID -  stirng
+	*/
        $frontierAnalytics.trackApp('AppName','89d47d74-ad26-4c03-9b38-f447d46486db','1.0.0','0.0.1');
   });
 ```
