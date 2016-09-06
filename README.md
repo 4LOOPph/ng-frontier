@@ -228,6 +228,33 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   <button type="button" fa-track-event="event"></button>
 ```
 
+### Screen Tracking
+```js
+  // Create a new screen tracking event
+  app.controller('SampleController', function ($frontierAnalytics) {
+      // Add calls as desired - see below
+       $frontierAnalytics.trackView('/video/detail/XXX');
+  });
+```
+
+### App Tracking
+```js
+  // Create a new app tracking event
+  app.controller('SampleController', function ($frontierAnalytics) {
+      // Add calls as desired - see below
+       $frontierAnalytics.trackApp('AppName','89d47d74-ad26-4c03-9b38-f447d46486db','1.0.0','0.0.1');
+  });
+```
+
+### Device Tracking
+```js
+  // Create a new device tracking event
+  app.controller('SampleController', function ($frontierAnalytics) {
+      // Add calls as desired - see below
+       $frontierAnalytics.trackDevice('89d47d74-ad26-4c03-9b38-f447d46486db','Vcuie-PC','Asus','0.0.1','Win 10','WinRT 10','1900x760','SMART');
+  });
+```
+
 ## Licence
 
 This project is licensed under the MIT license. See the LICENSE file for more info.
