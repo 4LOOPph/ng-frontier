@@ -218,7 +218,7 @@ Using Angular-ngRoute
 				@category - string
 				@action - string
 				@label - string
-				@value - string
+				@value - integer
 			*/
           $frontierAnalytics.trackEvent('video', 'play', 'django.mp4');
 
