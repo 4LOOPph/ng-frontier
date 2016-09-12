@@ -36,9 +36,9 @@ nuget install ng-frontier
 
 Inject the Native Frontier JS
 ````html
-<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.0/dist/ng-frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.4d/dist/frontier.min.js"></script>
 OR
-<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.0/dist/ng-frontier.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.4d/dist/frontier.js"></script>
 ````
 
 Then Add Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
@@ -51,9 +51,9 @@ In your application, declare the ngFrontier module dependency.
 OR Via CDN
 
 ````html
-<script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/angular/ng-frontier.min.js"></script>
+<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.1/dist/ng-frontier.min.js"></script>
 OR
-<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/master/dist/ng-frontier.min.js"></script>
+<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.1/dist/ng-frontier.js"></script>
 ````
 
 Don't forget to add frontier.min.js as this is the main SDK for Frontier Analytics
