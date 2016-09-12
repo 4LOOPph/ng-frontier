@@ -55,7 +55,7 @@
                 },
 
                 setUserId: function(userId) {
-                    return $window.Frontier.setUserId(userId);
+                    return $window.Frontier.setUserID(userId);
                 },
 
                 trackView: function(screenName) {
