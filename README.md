@@ -36,9 +36,9 @@ nuget install ng-frontier
 
 Inject the Native Frontier JS
 ````html
-<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.4d/dist/frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.5/dist/frontier.min.js"></script>
 OR
-<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.4d/dist/frontier.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.5/dist/frontier.js"></script>
 ````
 
 Then Add Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
@@ -51,9 +51,9 @@ In your application, declare the ngFrontier module dependency.
 OR Via CDN
 
 ````html
-<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.1/dist/ng-frontier.min.js"></script>
+<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.2/dist/ng-frontier.min.js"></script>
 OR
-<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.1/dist/ng-frontier.js"></script>
+<script src="https://github.com/4LOOPph/ng-frontier/blob/v1.0.2/dist/ng-frontier.js"></script>
 ````
 
 Don't forget to add frontier.min.js as this is the main SDK for Frontier Analytics
@@ -185,6 +185,7 @@ Using Angular-ngRoute
        $frontierAnalytics.setUserId('XXXXX');
   });
 ```
+**Note:** userId parameter must be in a form of String or in a type of String. You can pass a numeric value on it but you must convert it to String data type.
 
 ### Page Tracking
 ```js
@@ -293,6 +294,19 @@ You can define the properties on your controller too, `$scope.event = ['video', 
        $frontierAnalytics.trackDevice('89d47d74-ad26-4c03-9b38-f447d46486db','Vcuie-PC','Asus','0.0.1','Win 10','WinRT 10','1900x760','SMART');
   });
 ```
+
+### Analytics Reset
+```js
+	$frontierAnalytics.Reset();
+```
+**Note:** Use Analytics Reset when you want to clear Analytics cache. This means everything on analytics initialization is cleared and a browser reload/refresh is required
+
+### Analytics Reset
+```js
+	$frontierAnalytics.signOut();
+```
+**Note:** Use Analytics Reset when you want to signout Analytics active session. This means everything on analytics current session will be stop and resetted.  You can use this feature on your application authentication.
+
 
 ## Licence
 
