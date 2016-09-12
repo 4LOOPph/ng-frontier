@@ -36,9 +36,9 @@ nuget install ng-frontier
 
 Inject the Native Frontier JS
 ````html
-<script src="http://fourloopph.bitbucket.org/developers/bin/analytics/v1/js/frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.0/dist/ng-frontier.min.js"></script>
 OR
-<script src="https://cdn.rawgit.com/4LOOPph/frontier/master/dist/frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.0/dist/ng-frontier.js"></script>
 ````
 
 Then Add Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
