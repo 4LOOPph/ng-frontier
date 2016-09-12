@@ -30,6 +30,14 @@
                     }
                 },
 
+                Reset: function(){
+                    return $window.Frontier.Reset();
+                },
+
+                signOut: function(){
+                    return $window.Frontier.signOut();
+                },
+
                 debugMode: function(isEnable) {
                     return $window.Frontier.enableAppDebugging(isEnable);
                 },
