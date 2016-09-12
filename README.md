@@ -51,9 +51,9 @@ In your application, declare the ngFrontier module dependency.
 OR Via CDN
 
 ````html
-<script src="https://github.com/4LOOPph/ng-frontier/v1.0.2/dist/ng-frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.2/dist/ng-frontier.min.js"></script>
 OR
-<script src="https://github.com/4LOOPph/ng-frontier/v1.0.2/dist/ng-frontier.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/ng-frontier/v1.0.2/dist/ng-frontier.js"></script>
 ````
 
 Don't forget to add frontier.min.js as this is the main SDK for Frontier Analytics
