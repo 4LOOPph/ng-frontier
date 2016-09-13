@@ -305,7 +305,7 @@ You can define the properties on your controller too, `$scope.event = ['video', 
 ```js
 	$frontierAnalytics.signOut();
 ```
-**Note:** Use Analytics Reset when you want to signout Analytics active session. This means everything on analytics current session will be stop and resetted.  You can use this feature on your application authentication.
+**Note:** Use Analytics Signout when you want to signout Analytics active session. This means everything on analytics current session will be stop and resetted.  You can use this feature on your application authentication.
 
 
 ## Licence
