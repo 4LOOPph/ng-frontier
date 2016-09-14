@@ -36,9 +36,9 @@ nuget install ng-frontier
 
 Inject the Native Frontier JS
 ````html
-<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.5/dist/frontier.min.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.6/dist/frontier.min.js"></script>
 OR
-<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.5/dist/frontier.js"></script>
+<script src="https://cdn.rawgit.com/4LOOPph/frontier/v1.0.6/dist/frontier.js"></script>
 ````
 
 Then Add Or alternatively, grab the dist/ng-frontier.min.js and include it in your project
@@ -201,11 +201,11 @@ Using Angular-ngRoute
        $frontierAnalytics.trackPage('/video/detail/XXX');
 
        // Create a new pageview event with page title
-       $frontierAnalytics.trackPage('/video/detail/XXX', 'Video XXX');
+       $frontierAnalytics.trackPage('Video XXX','/video/detail/XXX');
 
        // Create a new pageview event with page title, custom dimension, and custom metric
        // Universal Analytics only
-       $frontierAnalytics.trackPage('/video/detail/XXX', 'Video XXX', { dimension15: 'My Custom Dimension', metric18: 8000 });
+       $frontierAnalytics.trackPage('Video XXX','/video/detail/XXX','Page XXXX');
   });
 ```
 
@@ -252,10 +252,10 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
 			/*
-			PARAMETERS
+				PARAMETERS
 				@screenName - string
 			*/
-       $frontierAnalytics.trackView('/video/detail/XXX');
+       $frontierAnalytics.trackView('Home');
   });
 ```
 
@@ -265,7 +265,7 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
 	/*
-	PARAMETERS
+		PARAMETERS
 		@appName - string
 		@appID - string
 		@appVersion - string
@@ -281,7 +281,7 @@ You can define the properties on your controller too, `$scope.event = ['video', 
   app.controller('SampleController', function ($frontierAnalytics) {
       // Add calls as desired - see below
 		/*
-		PARAMETERS
+			PARAMETERS
 			@deviceID - string
 			@deviceName - string
 			@deviceBrand - string
